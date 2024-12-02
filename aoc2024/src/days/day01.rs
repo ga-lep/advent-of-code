@@ -1,10 +1,8 @@
-use clap::builder::TypedValueParser;
-
 pub fn solve_step1(input: &str) -> String {
     //println!("input : {}", input);
 
-    let mut left: Vec<i32> = Vec::new();
-    let mut right: Vec<i32> = Vec::new();
+    let mut left: Vec<i32>;
+    let mut right: Vec<i32>;
 
     (left, right) = get_vecs_from_input(input);
     left.sort();
@@ -22,8 +20,8 @@ pub fn solve_step1(input: &str) -> String {
 }
 
 pub fn solve_step2(input: &str) -> String {
-    let mut left: Vec<i32> = Vec::new();
-    let mut right: Vec<i32> = Vec::new();
+    let left: Vec<i32>;
+    let right: Vec<i32>;
 
     (left, right) = get_vecs_from_input(input);
 
